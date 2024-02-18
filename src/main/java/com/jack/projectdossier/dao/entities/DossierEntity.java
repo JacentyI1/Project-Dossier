@@ -1,7 +1,8 @@
-package com.jack.projectdossier.domain.entities;
+package com.jack.projectdossier.dao.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Table(name = "dossiers")
 public class DossierEntity {
     @Id
@@ -20,12 +22,13 @@ public class DossierEntity {
     @JoinColumn(name = "user_id")
     private UserEntity user;
 
-    // ====================== DATA =================================
 
-    private String firstName = user.getName();
 
-    private String lastName = user.getSurname();
+    // ====================== DATA ======================
 
+    private String firstName;
+
+    private String lastName;
 
 
 }

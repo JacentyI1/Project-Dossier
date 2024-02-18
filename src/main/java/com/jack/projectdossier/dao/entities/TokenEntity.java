@@ -1,6 +1,6 @@
-package com.jack.projectdossier.domain.token;
+package com.jack.projectdossier.dao.entities;
 
-import com.jack.projectdossier.domain.entities.UserEntity;
+import com.jack.projectdossier.dao.enums.TokenType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Token {
+public class TokenEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

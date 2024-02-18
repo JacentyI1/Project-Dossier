@@ -1,4 +1,4 @@
-package com.jack.projectdossier.domain.entities;
+package com.jack.projectdossier.dao.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
