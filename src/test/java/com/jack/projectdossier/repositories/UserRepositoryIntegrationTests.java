@@ -34,6 +34,10 @@ public class UserRepositoryIntegrationTests {
         // Assert
         assertThat(result).isPresent();
         //noinspection OptionalGetWithoutIsPresent
-        assertThat(result.get()).isEqualTo(user);
+        assertThat(result.get().getId()).isEqualTo(user.getId());
+        assertThat(result.get().getName()).isEqualTo(user.getName());
+        assertThat(result.get().getSurname()).isEqualTo(user.getSurname());
+        assertThat(result.get().getEmail()).isEqualTo(user.getEmail());
+        assertThat(result.get().getPassword()).isEqualTo(user.getPassword());
     }
 }
