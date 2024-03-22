@@ -6,8 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.Instant;
 import java.util.Date;
 
 @Entity
@@ -19,6 +22,7 @@ import java.util.Date;
         name = "users",
         uniqueConstraints = @UniqueConstraint(columnNames = {"email"})
 )
+//@DynamicUpdate
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -42,11 +46,11 @@ public class UserEntity {
 
     @CreationTimestamp
     @Column(updatable = false, name = "Created_at")
-    private Date createdAt;
+    private Instant createdAt;
 
     @UpdateTimestamp
     @Column(name = "Updated_at")
-    private Date updatedAt;
+    private Instant updatedAt;
 
 //    @Enumerated(EnumType.STRING)
 //    private Role role;
