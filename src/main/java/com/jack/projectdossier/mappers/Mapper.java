@@ -1,4 +1,4 @@
-package com.jack.projectdossier.domain.mappers;
+package com.jack.projectdossier.mappers;
 
 public interface Mapper<A, B>{
     B mapTo(A a);
