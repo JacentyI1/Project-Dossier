@@ -7,4 +7,4 @@ With multiple other functionalities like: forgotten password, edit personal info
 ## Deployment
 
 ## Bug fixes:
-- N/Ag
+- N/A
