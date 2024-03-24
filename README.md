@@ -6,9 +6,5 @@ Since I am too inexperienced (for now) to develop multiple projects, I aim to de
 With multiple other functionalities like: forgotten password, edit personal information, email verification, print to pdf, etc.
 ## Deployment
 
-## ToDo:
-- update README
-- user login & registration
-- user data edit
-- admin panel
-- ...
+## Bug fixes:
+- N/Ag
