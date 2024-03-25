@@ -4,7 +4,7 @@ Hi  everyone, my name's Jacek and this is one of my first proper projects. Durin
 ## Project Description
 Since I am too inexperienced (for now) to develop multiple projects, I aim to develop a web app for creating your own resume / portfolio / cv / ...
 With multiple other functionalities like: forgotten password, edit personal information, email verification, print to pdf, etc.
-## Deployment
+## ?????
 
 ## Bug fixes:
 - N/A
